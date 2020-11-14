@@ -61,7 +61,6 @@ jobs:
       with:
       command: |
         cd Abramov
-        docker-compose --no-ansi rm
         docker-compose --no-ansi pull
         docker-compose --no-ansi up -d
       host: ${{ secrets.SSH_HOST }}
