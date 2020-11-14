@@ -10,6 +10,6 @@ def v2():
     return 'Second action'
 
 @app.route('/Abramov')
-def v2():
+def v3():
     return 'Hello from CI with GitHub Actions by Абрамов'
 #1
