@@ -1,0 +1,7 @@
+version: '3.3'
+
+services: 
+  flask_app:
+    image: megurt/lesson6rep
+    ports:
+    - 5501:5000
