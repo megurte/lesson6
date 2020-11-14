@@ -56,4 +56,14 @@ jobs:
       with:
         push: true
         tags: megurt/lesson6rep:latest
-        #use
+    - name: Restart service
+      uses: fifsky/ssh-action@master
+      with:
+      command: |
+        cd Abramov
+        docker-compose --no-ansi rm
+        docker-compose --no-ansi pull
+        docker-compose --no-ansi up -d
+      host: ${{ secrets.SSH_HOST }}
+      user: student
+      key: ${{ secrets.SSH_PASSWORD}}
