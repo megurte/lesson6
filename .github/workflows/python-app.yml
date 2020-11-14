@@ -65,5 +65,5 @@ jobs:
           docker-compose --no-ansi up -d
         host: ${{ secrets.SSH_HOST }}
         user: student
-        key: ${{ secrets.SSH_PASSWORD}}
-      #3
+        pass: ${{ secrets.SSH_PASSWORD}}
+      
